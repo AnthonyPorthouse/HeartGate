@@ -22,7 +22,7 @@ public class ModEntry : Mod
 
     private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
     {
-        var api = this.Helper.ModRegistry.GetApi<ContentPatcher.IContentPatcherAPI>("Pathoschild.ContentPatcher");
+        var contentPatcherApi = this.Helper.ModRegistry.GetApi<ContentPatcher.IContentPatcherAPI>("Pathoschild.ContentPatcher");
         
         // TODO: Register content patcher tokens for formatting events for heart gates
     }
